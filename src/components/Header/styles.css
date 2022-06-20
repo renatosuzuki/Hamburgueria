@@ -1,0 +1,39 @@
+header {
+    background-color: #F5F5F5;
+}
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+.pesquisa {
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: .3rem;
+}
+.pesquisa input, button {
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+.pesquisa button {
+    cursor: pointer;
+    background-color: #27AE60;
+    color: white;
+}
+.pesquisa button:hover {
+    color: black;
+}
+
+@media (max-width: 500px) {
+    .header-flex {
+        flex-direction: column;
+        gap: .3rem;
+    }
+}

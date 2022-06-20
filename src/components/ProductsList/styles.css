@@ -1,0 +1,25 @@
+.productsList {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    gap: 1rem;
+}
+@media (max-width: 650px) {
+    .productsList {
+        margin-bottom: 1rem;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        margin-right: -.8rem;
+    }
+}
+@media (min-width: 651px) {
+    .productsList {
+        justify-content: center;
+    }
+}
+@media (min-width: 997px) {
+    .productsList {
+        justify-content: normal;
+    }
+}
